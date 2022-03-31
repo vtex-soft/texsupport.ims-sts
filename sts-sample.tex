@@ -52,21 +52,25 @@
 %\thankstext{T1}{A sample additional note to the title.}
 
 \begin{aug}
-\author[A]{\fnms{Name1} \snm{Surname1}\thanksref{t1}\ead[label=e1]{first@somewhere.com}},
-\author[B]{\fnms{Name2} \snm{Surname2}\ead[label=e2]{second@somewhere.com}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ORCID can be inserted by command:         %%
+%% \orcid{0000-0000-0000-0000}               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\author[A]{\fnms{Name1}~\snm{Surname1}\thanksref{t1}\ead[label=e1]{first@somewhere.com}},
+\author[B]{\fnms{Name2}~\snm{Surname2}\ead[label=e2]{second@somewhere.com}\orcid{0000-0000-0000-0000}}
 \and
-\author[C]{\fnms{Name3} \snm{Surname3}\ead[label=e3]{third@somewhere.com}\ead[label=u1,url]{www.foo.com}}
+\author[C]{\fnms{Name3}~\snm{Surname3}\ead[label=e3]{third@somewhere.com}\ead[label=u1,url]{www.foo.com}}
 
 \thankstext{t1}{Some comment}
 
 \address[A]{Name1 Surname1 is Professor Emeritus, Department,
-University or Company Name, City, Country \printead{e1}.}
+University or Company Name, City, Country\printead[presep={\ }]{e1}.}
 
 \address[B]{Name2 Surname2 is Professor, Department,
-University or Company Name, City, Country \printead{e2}.}
+University or Company Name, City, Country\printead[presep={\ }]{e2}.}
 
 \address[C]{Name3 Surname3 is Distinguished Professor, Department,
-University or Company Name, City, Country \printead{e3,u1}.}
+University or Company Name, City, Country\printead[presep={\ }]{e3,u1}.}
 
 \end{aug}
 
